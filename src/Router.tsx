@@ -1,7 +1,8 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 import App from './App'
-import { AutoBatch } from './components/AutoBatch'
+import { AutoBatch } from './pages/AutoBatch'
+import { SuspenseDemo } from './pages/SuspenseDemo'
 
 import type { FC } from 'react'
 
@@ -13,6 +14,7 @@ export const Router: FC = () => {
       <Routes>
         <Route path={'/'} element={<App />} />
         <Route path={'/autobatch'} element={<AutoBatch />} />
+        <Route path={'/suspense'} element={<SuspenseDemo />} />
       </Routes>
     </BrowserRouter>
   )

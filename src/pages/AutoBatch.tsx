@@ -3,7 +3,7 @@ import { useState } from 'react'
 
 import axios from 'axios'
 
-import { Layout } from './Layout'
+import { Layout } from '../components/Layout'
 
 import type { FC } from 'react'
 
@@ -30,8 +30,6 @@ export const AutoBatch: FC = () => {
       setFetchCount((fetchCount) => fetchCount + 1)
     })
   }
-
-  console.log('Rendering AutoBatch')
 
   return (
     <Layout>
