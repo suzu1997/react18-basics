@@ -1,7 +1,7 @@
 ## 内容
 
 - Automatic batching・Strict Mode
-- Suspense
+- Suspense・Error Boundary
 - Nested Suspense
 - startTransition (Concurrent features)
 
