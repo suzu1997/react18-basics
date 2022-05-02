@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
 
@@ -20,10 +20,10 @@ const queryClient = new QueryClient({
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 root.render(
-  <React.StrictMode>
-    <QueryClientProvider client={queryClient}>
-      <Router />
-      <ReactQueryDevtools initialIsOpen={true} />
-    </QueryClientProvider>
-  </React.StrictMode>,
+  // <React.StrictMode>
+  <QueryClientProvider client={queryClient}>
+    <Router />
+    <ReactQueryDevtools initialIsOpen={true} />
+  </QueryClientProvider>,
+  // </React.StrictMode>,
 )
