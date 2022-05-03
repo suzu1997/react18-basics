@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import App from './App'
 import { AutoBatch } from './pages/AutoBatch'
 import { SuspenseDemo } from './pages/SuspenseDemo'
+import { NestedSuspense } from './pages/NestedSuspense'
 
 import type { FC } from 'react'
 
@@ -15,6 +16,7 @@ export const Router: FC = () => {
         <Route path={'/'} element={<App />} />
         <Route path={'/autobatch'} element={<AutoBatch />} />
         <Route path={'/suspense'} element={<SuspenseDemo />} />
+        <Route path={'/nested_suspense'} element={<NestedSuspense />} />
       </Routes>
     </BrowserRouter>
   )

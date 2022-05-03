@@ -14,6 +14,7 @@ const queryClient = new QueryClient({
       retry: false, // fetch失敗時に再試行しない
       refetchOnWindowFocus: false, // ブラウザへのフォーカス時に再取得しない
       suspense: true, // React18のSuspense機能を使うためにtrueにする
+      staleTime: 300000, // 再取得までの保持期間
     },
   },
 })
