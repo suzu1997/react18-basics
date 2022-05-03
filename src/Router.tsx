@@ -4,6 +4,7 @@ import App from './App'
 import { AutoBatch } from './pages/AutoBatch'
 import { SuspenseDemo } from './pages/SuspenseDemo'
 import { NestedSuspense } from './pages/NestedSuspense'
+import { Concurrent } from './pages/Concurrent'
 
 import type { FC } from 'react'
 
@@ -17,6 +18,7 @@ export const Router: FC = () => {
         <Route path={'/autobatch'} element={<AutoBatch />} />
         <Route path={'/suspense'} element={<SuspenseDemo />} />
         <Route path={'/nested_suspense'} element={<NestedSuspense />} />
+        <Route path={'/concurrent'} element={<Concurrent />} />
       </Routes>
     </BrowserRouter>
   )

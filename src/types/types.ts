@@ -36,3 +36,11 @@ export type CommentType = {
   name: string
   postId: number
 }
+
+export type PhotoType = {
+  albumId: number
+  id: number
+  title: string
+  url: string
+  thumbnailUrl: string
+}
